@@ -23,4 +23,3 @@ Then, all that should be left to do is run the ```make``` command and you should
 The file ```replace.cpp``` needs to be included otherwise instances of YourName in ```plot.cpp``` will not actually change to the players name. The code searches ```plot.cpp``` for YourName and replaces it. However, this is not the case for if you type YourName in ```main.cpp``` - here the change happens automatically. It is realised that this is not the most elegant solution and we are currently working to find a better way to do it.
 
 It is hoped in the future to add items the player can pick up and use. Also, it is a goal to add a system where the choices you make have an associated morality. So, making lots of ''evil'' choices will result in your character only being able to do the ''evil'' levels 
-# Text-Adventure-Game
