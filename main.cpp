@@ -1,13 +1,12 @@
 #include "header.h"
 using namespace std;
 
-string YourName;
-
 Menu::Menu(const string &name, 
            const string &situation,
            const string &excuse,
-           const vector<pair <string, string> > &choices)
-     : _name(name), _situation(situation), _excuse(excuse), _choices(choices)
+           const vector<pair <string, string> > &choices,
+           const vector<string> &items   )
+     : _name(name), _situation(situation), _excuse(excuse), _choices(choices), _items(items)
 {}
 
 const bool Menu::operator==(const string &name) 
@@ -41,13 +40,42 @@ const void Menu::Enter_String()
             choice[i] = '_';
         }
     }
+ 
+    if (choice.find("pick_up") != string::npos )
+    {
+	string ItemChoice = choice;
+	BagAdd(ItemChoice, _items); 
+	Menu::Enter_String();
+    }
 
-    if (choice == "exit")
+    else if (choice.find("check_bag") != string::npos)
+    {
+	BagExplain(STORE);
+	Menu::Enter_String();
+    }
+
+    else if (choice.find("drop") != string::npos)
+    {
+    string ItemChoice = choice;
+    BagRemove(ItemChoice, STORE);
+    Menu::Enter_String();
+    }
+
+    else if (choice == "exit")
     {
         exit(0);
     }
-    cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
 
+    else if (choice == "instructions")
+    {
+        INST();
+    }
+
+
+    else
+    {
+    cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+    }
 }
 
 const string& Menu::Explain_Choice() 
@@ -66,13 +94,14 @@ const string& Menu::Explain_Choice()
     j=0;
     
     Menu::Enter_String();
-    
+ 
     while ( j < _choices.size() )
     {
         if ( choice == _choices[j].first)
         {
             break;
         }
+	
         if ((j+1) == _choices.size())  
         {
             Menu::No_Choice();
@@ -90,25 +119,14 @@ Menu::~Menu()
 {}
 
 int main()
-{
-    cout << " \n\n";
-    cout << "-------------------------------- \n";
-    cout << "------ Name Of Your Game ------- \n";
-    cout << "-------------------------------- \n\n\n";
-    cout << "A little bit of intro text \nHere I ask ''what is your name?'' \n\n";
-	
-    getline(cin, YourName);
-    if (YourName == "Exit")
-    {
-        exit(0);
-    }
-    cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+{ 
+    intro_txt();
 
-    cout << "You can then make the game say what you have said your name is by using ''YourName'' \nFor example: oh, your name is: " << YourName << ", I guess thats a pretty neat name! \n\n"; 
-    cout << "(If you type ''Exit'' anytime you can leave the game)\n\n";
+    cout << "oh, your name is: " << YourName << ", I guess thats a pretty neat name! \n\n";
 
     auto menu = find( game.begin(), game.end(), "start");
     while (menu != game.end())
         menu = find(game.begin(), game.end(), menu -> Explain_Choice());
+                
     return 0;
 }
