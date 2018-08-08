@@ -9,22 +9,34 @@ vector<Menu> game{
         "That was not an option",       //What will be displayed if you type something that isnt an option
 
         vector<pair <string, string> >{
-        {"first_level", "1"}, {"second_level", "2"}}),   //Options that can be chosen, and the level you will be sent to
-
-
+        {"first_level", "1"}, {"second_level", "2"}},   //Options that can be chosen, and the level you will be sent to
+        vector<string>
+        {"shoes", "poop"}),
 
 
     Menu("1",
         "You're now at level 1",   
-        "",   //this is the last level, so this part is not needed
+        "oops",   //this is the last level, so this part is not needed
         vector<pair <string, string> >{
-        }),
+        {"3","3"}, {"4","4"}},
+        vector<string>{
+	}),
 
     Menu("2",
         "You're now at level 2",
 	"",
         vector<pair <string, string> >{
-        })
+        },
+        vector<string>{
+	}),
+
+    Menu("3",
+        "Youre now at level 3",
+    "",
+        vector<pair <string, string> >{
+        },
+        vector<string>{
+    })
 
 };
 
