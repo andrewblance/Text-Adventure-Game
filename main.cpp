@@ -4,7 +4,7 @@ using namespace std;
 Menu::Menu(const string &name, 
            const string &situation,
            const string &excuse,
-           const vector<pair <string, string> > &choices,
+           const vector<tuple <string, string, string> > &choices,
            const vector<string> &items   )
      : _name(name), _situation(situation), _excuse(excuse), _choices(choices), _items(items)
 {}
@@ -19,7 +19,7 @@ const void Menu::Present_Choice()
     cout << "You can choose from: \n";
     for(auto ch : _choices)
     {
-        cout << ch.first << "\n";
+        cout << get<0>(ch) << "\n";
     } 
 }
 
@@ -71,7 +71,6 @@ const void Menu::Enter_String()
         INST();
     }
 
-
     else
     {
     cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
@@ -85,6 +84,7 @@ const string& Menu::Explain_Choice()
     if (_choices.size() == 0 )
     {
         cout << _situation << "\n";
+        cout << "The End" << "\n";
         exit(0);
     }
    
@@ -92,14 +92,22 @@ const string& Menu::Explain_Choice()
 
     int j;
     j=0;
-    
+    TryAgain:
     Menu::Enter_String();
- 
+    
     while ( j < _choices.size() )
     {
-        if ( choice == _choices[j].first)
-        {
-            break;
+        if ( choice == get<0>(_choices[j]))
+        { 
+            if (find(STORE.begin(), STORE.end(), get<2>(_choices[j])) != STORE.end() or get<2>(_choices[j]) == "Empty")
+            {
+                break;
+            } else {
+                cout << "you do not have the required item to do this!" << "\n";
+                cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+                goto TryAgain; 
+                }
+           break;
         }
 	
         if ((j+1) == _choices.size())  
@@ -110,9 +118,8 @@ const string& Menu::Explain_Choice()
             j = -1;
         }
        j++;
-    } 
-    
-    return _choices[j].second;
+    }  
+    return get<1>(_choices[j]);
 }
 
 Menu::~Menu()

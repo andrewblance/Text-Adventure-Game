@@ -10,14 +10,14 @@
 class Menu
 {
     std::string _name, _situation, _excuse;
-    std::vector<std::pair <std::string, std::string> > _choices;
+    std::vector<std::tuple <std::string, std::string, std::string>> _choices;
     std::vector<std::string> _items;
 
     public:
         Menu(const std::string &name,
              const std::string &situation,
              const std::string &excuse,
-             const std::vector<std::pair <std::string, std::string> > &choices = std::vector<std::pair <std::string,std::string> >{},
+             const std::vector<std::tuple <std::string, std::string, std::string>>  &choices = std::vector<std::tuple <std::string,std::string, std::string>> {},
              const std::vector<std::string> &items = std::vector<std::string>{});
         virtual ~Menu ();
         const bool operator==(const std::string &name);
