@@ -24,8 +24,6 @@ Then, all that should be left to do is run the ```make``` command and you should
 ## Other Notes
 The file ```replace.cpp``` needs to be included otherwise instances of YourName in ```plot.cpp``` will not actually change to the players name. The code searches ```plot.cpp``` for YourName and replaces it. However, this is not the case for if you type YourName in ```Intro.cpp``` - here the change happens automatically. It is realised that this is not the most elegant solution and we are currently working to find a better way to do it.
 
-It is hoped in the future to add items the player can pick up and use. This is currently in the works, the current version allows this but it doesn't effect the options you can take. Also, it is a goal to add a system where the choices you make have an associated morality. So, making lots of ''evil'' choices will result in your character only being able to do the ''evil'' levels. I also want to add a feature where you can restart the game (this is harder than it looks!).
-
-The final thing, the kickstarter stretch goals of this project, would be for it to play in its own window with a basic gui instead of just in the terminal.
+You can now pick up items and this will influence what choices you can make in the game. However, this meant using a goto function, maybe theres a more elegant way to do this? Also, it is a goal to add a system where the choices you make have an associated morality. So, making lots of ''evil'' choices will result in your character only being able to do the ''evil'' levels. I also want to add a feature where you can restart the game (this is harder than it looks!).
 
 Finally, this is just a skeleton for the game, if anyones interested to see it I have a version with a "story". 
