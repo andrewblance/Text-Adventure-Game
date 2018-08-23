@@ -17,7 +17,7 @@ Now, there is also a Intro file which will deal with a splash screen and instruc
 The command ```make``` should compile the files and allow the game to be run. However, if you want to customise the game for yourself text will need to be edited in a few files:
 1. The name of the game can be chosen in ```makefile```
 2. In ```Intro.cpp``` the openning text of the game is set. Here is also where you have to ask the character or their name.
-3. The file ```plot.cpp``` contains the bulk of the game itself. Each level is a 'block' which needs four things to be set. First, the name of the level and then the text that will describe that level. Here, if you want the players chosen name to be outputted use the string YourName. Next, what will happen if the user types something that is not an option needs to be chosen. Finally, the options and the level this will send you needs to be set - the number of options is entirely up to you.
+3. The file ```plot.cpp``` contains the bulk of the game itself. Each level is a 'block' which a few things need to be set. First, the name of the level and then the text that will describe that level. Here, if you want the players chosen name to be outputted use the string YourName. Next, what will happen if the user types something that is not an option needs to be chosen. Finally, the option, the level this will send and if you need an object to get there needs to be set - the number of options is entirely up to you. You also need to declare which object you can pick up are in the level. This is a few things, but there are 2 example plot files included that should hopefully clear things up.
 
 Then, all that should be left to do is run the ```make``` command and you should have a game!
 
