@@ -129,8 +129,6 @@ int main()
 { 
     intro_txt();
 
-    cout << "oh, your name is: " << YourName << ", I guess thats a pretty neat name! \n\n";
-
     auto menu = find( game.begin(), game.end(), "start");
     while (menu != game.end())
         menu = find(game.begin(), game.end(), menu -> Explain_Choice());
