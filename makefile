@@ -1,10 +1,10 @@
 CC = g++ -std=c++11
 CFLAGS = -g 
 
-default: TextAdventureGame 
+default: RobotTheFriendlyRobot 
 
-TextAdventureGame: main.o intro.o replace.o plot.o BagAdd.o BagExplain.o BagRemove.o
-	$(CC) $(CFLAGS) -o TextAdventureGame main.o replace.o intro.cpp plot.o BagAdd.o BagExplain.o BagRemove.o
+RobotTheFriendlyRobot: main.o intro.o replace.o plot.o BagAdd.o BagExplain.o BagRemove.o
+	$(CC) $(CFLAGS) -o RobotTheFriendlyRobot main.o replace.o intro.cpp plot.o BagAdd.o BagExplain.o BagRemove.o
 
 main.o: main.cpp header.h 
 	$(CC) $(CFLAGS) -c main.cpp
