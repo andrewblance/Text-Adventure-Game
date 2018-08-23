@@ -26,7 +26,7 @@ void INTRO()
 
     else if (INT == "play")
     {
-        cout << "\n" << "So, what is your name?" << "\n";
+        cout << "\n" << "hello buddy! \nmy name is robot, the friendly robot \nwhats your name?" << "\n";
         getline(cin, YourName);
         cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << "\n";
     
