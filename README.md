@@ -26,4 +26,4 @@ The file ```replace.cpp``` needs to be included otherwise instances of YourName 
 
 You can now pick up items and this will influence what choices you can make in the game. However, this meant using a goto function, maybe theres a more elegant way to do this? Also, it is a goal to add a system where the choices you make have an associated morality. So, making lots of ''evil'' choices will result in your character only being able to do the ''evil'' levels. I also want to add a feature where you can restart the game (this is harder than it looks!).
 
-Finally, this is just a skeleton for the game, if anyones interested to see it I have a version with a "story". 
+The default plot file it will use is for my game, Robot the Friendly Robot, which im still making. However, i have includeda blank plot file which can be used as a template to make your own game. This is ```oldplot.cpp```.
