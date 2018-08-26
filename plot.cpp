@@ -142,14 +142,120 @@ vector<Menu> game{
         vector<string>{
     }),
 
-    Menu("3",
-        "Youre now at level 3",
+    Menu("NW",
+        "You're right YourName Durham is quite nice now the nuclear radiation is blocking out the sun, good thing we're not in winnipeg, I bet its terrible there! Its the perfect temperature for the 73,987 penguins we have adopted and are raising as our own.  \n\nI also realise that I've kinda accomplished my life goal now of terrorising the planet, so I had an idea that might make you happy. We could Dress Our Penguins Up As Humans, and go have fun! This sets up the potential for us to have fun adventures were i pretend to be a human and we have lots of cute dressed up penguin children - oh what fun we'd have! me, you and 75,212 penguins! bonding over shared experiences, learning about each other, and ourselves. We could do things like go to a cinema, or mountain climbing.. \n\nAlso, I just noticed something that might interest you! Theres a little pile of POOP over there, I think a lil pupper may have made it. If you want we could go Look For Pupper. \n\n",
+    "These are 2 adorable options, so i understand why you'd be nervous to make a decision, but you do need to make a decision, for the penguins! Either:",
+        vector<tuple <string, string, string> >{
+        {"dress_our_penguins_up_as_humans", "DRESSUP", "human_clothes"}, {"look_for_pupper", "PUP", "Empty"}},
+        vector<string>{
+    "poop"}),
+
+    Menu("PUP",
+        "Well YourName this may have been the wrong direction! I cant see that lovely lil pupper anywhere... :( \n\nuh oh! where our 72,143 penguins?! They must have overheard us talk about how gosh darn cute this puppy would have been and got jealous! This is bad, they might have heard us decide that we weren't going to dress them up either!\n\nI've done a quick scan and I've found where the 70,456 penguins are, but they now all have Penguin Depression. We have failed our penguin children!",
+    "",
+        vector<tuple <string, string, string> >{
+        },
+        vector<string>{
+    }),
+
+    Menu("DRESSUP",
+        "Wow YourName that took a while! You need a lot of clothes to dress up 69,332 penguins, but gosh, dont they look so smart!\n\nLooking over you see a new side to robot the friendly robot, he looks happy, maybe even proud. You begin to think that he may not even use the satellites he's planning to take over to bombard continental Europe with radiation and collect their souls before they can make it to heaven in a jam jar he modified. \n\nYou all head out to go to town, you're laughing and joking about, it's a great time! You go to the cinema and see Paddington 2, Robot cries at the end and the 69,331 penguins eat a lot of candy. You even find that lovely little PUPPER and befriend her. Afterwards you take a long walk under the stars and its the perfect day\n\nI dont even know what I want anymore, YourName, I thought I wanted to use a array of satellites to bombard all of continental Europe with deadly radiation, but maybe now I want something more, a family.. \n\n You begin to reach out to take his hand to try be a family, but you hear someone call out to both of you! they start running towards you and you dont know what to do! Should you Stay And Talk To Them, or Run Away To The IPPP, youve heard the durham physics department is world class, it would be the pefect place to start a family with him!",
+    "I dunno, the person coming could be scary! Do you want to:",
+        vector<tuple <string, string, string> >{
+        {"stay_and_talk_to_them", "SATTH", "Empty"}, {"run_away_to_the_ippp", "IPPPPPP", "Empty"}, {"go_back", "NW", "Empty"}},
+        vector<string>{
+    "pupper"}),
+
+    Menu("IPPPPPP",
+        "You arrive at the ippp and it seems nice! Theres lots of copies of PESKIN AND SCHROEDER everywhere! However, inside its a little warm for the penguins.. maybe we should go Destroy COSMA, maybe by turning all those darn computers off the temperature will decrease! Robot is so friendly but he seems to dislike other computers! You keep exploring and in an oc118 you see someone huddled in the corner with some cards, maybe we shoudl Go Play With Them.",
+    "The IPPP is full of wonderful things! Do you want to:",
+        vector<tuple <string, string, string> >{
+        {"destroy_cosma", "DESCOS", "emp_device"}, {"go_play_with_them", "IPPPLAY", "yu-gi-oh_cards"}, {"go_back", "DRESSUP", "Empty"}},
+        vector<string>{
+    "peskin_and_schroeder"}),
+
+    Menu("DESCOS",
+        "Using the EMP you destroy COSMO! robots plan was right, the climate is perfect for the 67,666 penguins now!\nHowever, now that durham is a nuclear wasteland and the ippps computing power has been destroyed its physics research is being harmed! You could ask robot to act as their computers so they can get work done, but hes always so busy making friends and abducting babies that you dont think it would be fair.\n\nShortly afterwards the IPPP is shut down, and you are to blame!.",
+    "",
+        vector<tuple <string, string, string> >{
+        },
+        vector<string>{}
+    ),
+
+    Menu("IPPPLAY", 
+       "You and robot sit next to him and see he has a deck of yu-gi-oh cards. You reach into your bag and bring yours out. You look him in the eyes, you know whats about to go down.\n\nYou wont be able to see the result of this choice yet and you have not made it to the end of this game, but.... \n\n Robot the Friendly Robot will return to finish this story line in Robot the Friendly Robot 2\n", 
+    "",
+        vector<tuple <string, string, string> >{
+        },
+        vector<string>{}
+    ),
+
+    Menu("SATTH",
+        "As he gets closer you see its david attenborough! He must have heard about all these penguins and came searching for them!\n\ndavid hello, I am robot the friendly robot, have some human clothes! \n\nah yes david you are correct that is a lot cute penguins we have!\n\nhow did we get this quantity of penguins? good question david, you are such a wise and wholesome man. its a real pleasure for a robot such as myself to meet you. \n\ngetting all of it was a kinda funny story, YourName chose save all the penguins instead of saving hummus and thus i firebombed all the chickpea growing plantations in the Mediterranean, Southern Europe, Northern Africa, South America, and South Asia. Isn't that right YourName? Oh, yeah, and just like 2 days ago we launched nuclear weapons to every major population centre in the world\n\nUnsurprisingly Sir David Attenborough does not look impressed. He turns toward the window and a single tear rolls down his cheek. He must reaaaallly like hummus.\nYou realise for a moment all the birds stopped singing, they feel David's pain. \n\nYou feel slightly guilty, you should probably do something YourName to try make this better. You need to remind him of the love and wonder that still exists in the world, maybe you could Show Him Your Pupper Friend, or try Beg For Forgiveness.",
+    "Well, you really messed this one up, now David Attenborough is crying! Do you want to:",
+        vector<tuple <string, string, string> >{
+        {"go_back", "DRESSUP", "Empty"}, {"show_him_your_pupper_friend", "GIFT", "pupper"}, {"beg_for_forgiveness", "BFF", "Empty"}},
+        vector<string>{
+    }),
+
+    Menu("BFF",
+        "I've dedicated my life to trying to save our envicroment and help ensure the creatures of the earth survive the growing population of people, david says \nAll my work it seems was in vain, because of you, YourName. Perhaps instead of controlling the enviroment for the benefit of the population perhaps its time to control the population to allow the survival of the enviroment.\nI see you are worried YourName, but dont be, when I’m done, half of humanity will still exist. Perfectly balanced, as all things should be. \n\n  David Attenborough and Robot the Friendly Robot will return in Robot the Friendly Robot 2\n",
+    "",
+        vector<tuple <string, string, string> >{
+        },
+        vector<string>{
+    }),
+
+    Menu("GIFT",
+        "you show david your lil pupper you found and he starts to smile, he is reminded of all the beauty that still exists in the world..\n\nMaybe there is still hope for our world, you made mistakes YourName, but to err is human. Though this dogoo is perfect I cannot forgive you yet, your actions let to the destruction of our planets habitats and the creatures that call it home. Also, you rid the world of hummus when robot firebombed all the worlds chickpea supplies. No more Hummus! If only you could give me another gift that would fix that.... ",
+    "",
+        vector<tuple <string, string, string> >{
+        {"give_him_a_gift", "GOODEND", "chickpeas"}, {"go_back", "SATTH", "Empty"}},
+        vector<string>{
+    }),
+
+
+    Menu("WINNI",
+        "Youre right YourName Winnipeg is quite nice. Its the perfect temperature for the 77,557 penguins we have adopted and are raising as our own.  \n\n Its been such a long trip! maybe we should go have fun? A nice day out sounds fun, we could go to the cinema, go shopping for WASHING POWDER, HUMAN CLOTHES or EGGS, build a snowman or eat some POUTINE. \n\nWAIT! i almost forgot the whole point of everything! fun is nice but it doesnt have the same thrills as us beginning the annihilation of the world. \n\nYou look at robot, then at the 77,553 penguins, can you really do it? Are you actually going to Start The Nuclear Apocolypse? Or will you Stop Him?",
+    "This is it! decision time!",
+        vector<tuple <string, string, string> >{
+        {"start_the_nuclear_apocolypse", "NUCAP", "icbm_launcher"}, {"stop_him", "STOPHIM", "Empty"}, {"go_back", "PENGUINS", "Empty"}},
+        vector<string>{
+    "washing_powder", "human_clothes", "eggs" ,"poutine"}),
+
+    Menu("STOPHIM",
+        "..what? youre not letting me start the nuclear apcolypse?...  I thought we were on the same team, bffs, pals....\n\nBeing in a relationship sometimes requires comprimise YourName, I moved to Winnipeg for you and adopted 67,001 Penguins for you! I cant believe you wouldnt do this one small thing for me! My mother was right to tell me I should have run away with you! this was a mistake, we're over! I'm breaking up with you!",
+    "",
+        vector<tuple <string, string, string> >{
+        },
+        vector<string>{
+    }),
+
+    Menu("NUCAP",
+        "Robot smiles as the missiles launch into the sky and land in the 20 most populated cities in the world. Its a nice feeling when your friends accomplish their goals, isnt it?! \n\nThank you for helping me do this, YourName, how could I ever forgive you! I feel we have such a special connection, we really are bffs! Between getting our 73,654 penguins and murdering billions of people we've really had a crazy weekend! How about we slow things done a bit and try find somewhere to live? We do have all these penguins to look after. We could Stay Here, though i do fear the nuclea radiation will blow over here soon and kill us, or we could Move To Durham, like i suggested earlier",
+    "You guys have come so far! What do you want to do now?",
+        vector<tuple <string, string, string> >{
+        {"stay_here", "STAYWIN", "Empty"}, {"move_to_durham", "NW", "Empty"}, {"go_back", "WINNI", "Empty"}},
+        vector<string>{
+    }),
+
+    Menu("STAYWIN",
+        "You find a lovely semi-detached house to stay in, its in a safe neighbourhood with good penguins schools and you 2 settle down. Though you're life is objectively good you sometimes feel unsatisfied with life, as if something is missing. You try tell robot this but he doesnt understand, he accomplished all his goals when he began eradicating earth of all OAPs. You watch the 71,328 penguins grow old and that still doesnt make you feel fulfilled. You hope they are happier than you are. \n\nYou hear on the news that all of Canada's soil is irradiated, that soon the nations crops will be unedible. You dont tell robot this. You pretend you didnt hear this next time you go shopping and cook dinner. As you eat your meal you secretly hope the news was right, that finally you will be poisoned and put out of your misery. \n\n(ps, there is happier endings available)",
+    "",
+        vector<tuple <string, string, string> >{
+        },
+        vector<string>{
+    }),
+
+    Menu("GOODEND",
+        "David starts to cry as you bring some chickpeas out of your bag.. \n\nthank you for this, he says, all is forgiven. He gives you a big hug and you know everything is going to work out. David moves in with you, robot and the 65,134 penguins and your life is so full and wholesome. David teaches more about penguin culture and his care and general loveliness makes the penguins happier and healthier. Your life is so wonderful now, you have a family of 65,135 wonderful penguins, you live with your bff robot and david attenborough lives with you. This is the happiest you've ever been, every morning you wake up and your heart is so full you think you might cry. Your 66,032 penguins are doing so well in school and 43,893 go on to do higher education, which is far higher than the national average for penguins! You have accomplished all your goals and so has robot, and when david starts to reintroduce all the beautiful plants and animals that were lost in Robots slaughters David is happy to. All because of you! you did it! Well done! \n\nYou win!",
     "",
         vector<tuple <string, string, string> >{
         },
         vector<string>{
     })
 
- 
+
+
 };
 
