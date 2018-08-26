@@ -60,11 +60,11 @@ void INST()
 {
     cout << "Robot is quite an easy game to play, don't worry!" << "\n";
     cout << "in the game you will be given a scenerio and all you have to do is choose what you would like to do, easy peasy!" << "\n";
-    cout << "sometimes, there will be items you need to pick up to progress through the game. The contents of your bag can be picked up, thrown away and checked using:" << "\n";
+    cout << "sometimes, there will be items you need to pick up to progress through the game. You can tell what these will be cause theyll be in BLOCK CAPS. The contents of your bag can be picked up, thrown away and checked using:" << "\n";
     cout << "       > 'pick up <item>' " << "\n";
-    cout << "       > 'dump <item>'" << "\n";
+    cout << "       > 'drop <item>'" << "\n";
     cout << "       > 'check bag'"  << "\n";
-    cout << "finally, you can always exit or restart the game or get the instructions back up at anytime by typing in 'Exit', 'Restart' or 'Instructions'" << "\n";
+    cout << "finally, you can always exit the game or get the instructions back up at anytime by typing in 'Exit' or 'Instructions'" << "\n";
     cout << "have fun! :)" << "\n";
     cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << "\n";
     return;
