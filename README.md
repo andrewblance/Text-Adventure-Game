@@ -1,4 +1,4 @@
-# Text Adventure Game
+# Text Adventure Game (Robot The Friendly Robot)
 
 ## Introduction
 This repository contains code for a simple text adventure game. The game will output a scenario, give the player a selection of options to choose from, and then send the player to the next level. It's a simple program but can be a lot of fun. 
