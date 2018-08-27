@@ -9,6 +9,7 @@ Menu::Menu(const string &name,
      : _name(name), _situation(situation), _excuse(excuse), _choices(choices), _items(items)
 {}
 
+
 const bool Menu::operator==(const string &name) 
 {
     return name == _name;
@@ -31,6 +32,11 @@ const void Menu::No_Choice()
 const void Menu::Enter_String()
 {
     getline(cin,choice);
+
+    ofstream myfile;
+    myfile.open (YourName, ios_base::app); 
+    myfile << choice << ";" << endl;
+    myfile.close();
 
     for (int i=0; i<choice.length(); i++)
     {
@@ -126,12 +132,13 @@ Menu::~Menu()
 {}
 
 int main()
-{ 
+{    
+        
     intro_txt();
 
     auto menu = find( game.begin(), game.end(), "start");
     while (menu != game.end())
         menu = find(game.begin(), game.end(), menu -> Explain_Choice());
-                
+    
     return 0;
 }
