@@ -240,7 +240,7 @@ vector<Menu> game{
     }),
 
     Menu("STAYWIN",
-        "You find a lovely semi-detached house to stay in, its in a safe neighbourhood with good penguins schools and you 2 settle down. Though you're life is objectively good you sometimes feel unsatisfied with life, as if something is missing. You try tell robot this but he doesnt understand, he accomplished all his goals when he began eradicating earth of all OAPs. You watch the 71,328 penguins grow old and that still doesnt make you feel fulfilled. You hope they are happier than you are. \n\nYou hear on the news that all of Canada's soil is irradiated, that soon the nations crops will be unedible. You dont tell robot this. You pretend you didnt hear this next time you go shopping and cook dinner. As you eat your meal you secretly hope the news was right, that finally you will be poisoned and put out of your misery. \n\n(ps, there is happier endings available)",
+        "You find a lovely semi-detached house to stay in, its in a safe neighbourhood with good penguins schools and you 2 settle down. Though you're life is objectively good you sometimes feel unsatisfied with life, as if something is missing. You try tell robot this but he doesnt understand, he accomplished all his goals when he began eradicating earth of all OAPs. You wonder if there was more you could do. If only you could try again and do things differently! \n\n",
     "",
         vector<tuple <string, string, string> >{
         },
