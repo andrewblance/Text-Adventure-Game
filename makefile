@@ -1,33 +1,31 @@
 CC = g++ -std=c++11
-CFLAGS = -g 
+CFLAGS = -g
 
-default: RobotTheFriendlyRobot 
+default: RobotTheFriendlyRobot
 
-RobotTheFriendlyRobot: main.o intro.o replace.o plot.o BagAdd.o BagExplain.o BagRemove.o
-	$(CC) $(CFLAGS) -o RobotTheFriendlyRobot main.o replace.o intro.cpp plot.o BagAdd.o BagExplain.o BagRemove.o
+RobotTheFriendlyRobot: main.o Intro.o replace.o plot.o BagAdd.o BagExplain.o BagRemove.o
+	$(CC) $(CFLAGS) -o RobotTheFriendlyRobot main.o replace.o Intro.cpp plot.o BagAdd.o BagExplain.o BagRemove.o
 
-main.o: main.cpp header.h 
-	$(CC) $(CFLAGS) -c main.cpp
+main.o: main.cpp header.h
+	$(CC) $(CFLAGS) -c main.cpp -o $@
 
-intro.o: intro.cpp header.h
-	$(CC) $(CFLAGS) -c intro.cpp
+Intro.o: Intro.cpp header.h
+	$(CC) $(CFLAGS) -c Intro.cpp -o $@
 
 replace.o: replace.cpp header.h
-	$(CC) $(CFLAGS) -c replace.cpp
+	$(CC) $(CFLAGS) -c replace.cpp -o $@
 
 plot.o: plot.cpp header.h
-	$(CC) $(CFLAGS) -c plot.cpp
+	$(CC) $(CFLAGS) -c plot.cpp -o $@
 
 BagAdd.o: BagAdd.cpp header.h
-	$(CC) $(CFLAGS) -c BagAdd.cpp
+	$(CC) $(CFLAGS) -c BagAdd.cpp -o $@
 
 BagExplain.o: BagExplain.cpp header.h
-	$(CC) $(CFLAGS) -c BagExplain.cpp
+	$(CC) $(CFLAGS) -c BagExplain.cpp -o $@
 
 BagRemove.o: BagRemove.cpp header.h
-	$(CC) $(CFLAGS) -c BagRemove.cpp 
+	$(CC) $(CFLAGS) -c BagRemove.cpp -o $@
 
 clean:
 	$(RM) count *.o *~
-
-

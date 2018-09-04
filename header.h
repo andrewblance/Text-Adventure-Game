@@ -7,6 +7,7 @@
 #include <vector>
 #include <algorithm>
 #include <string>
+#include <tuple>
 
 class Menu
 {
@@ -25,7 +26,7 @@ class Menu
         const std::string& Explain_Choice();
         const void Enter_String();
         std::string choice;
-	std::string ItemChoice;
+        std::string ItemChoice;
         const void Present_Choice() ;
         const void No_Choice();
 };
@@ -43,5 +44,4 @@ void INST();
 
 
 
-#endif 
-
+#endif
