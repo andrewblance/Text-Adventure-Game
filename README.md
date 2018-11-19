@@ -1,7 +1,11 @@
 # Text Adventure Game (Robot The Friendly Robot)
 
 ## Introduction
-This repository contains code for a simple text adventure game. The game will output a scenario, give the player a selection of options to choose from, and then send the player to the next level. It's a simple program but can be a lot of fun. 
+This repository contains code for Robot the Friendly Robot, the revolutionary new text adventure game. In it you befriend Robot, a very friendly robot, and help him with his task or taking over the world. You'll laugh! you'll cry!! and maybe you'll learn something about yourself too. 
+
+RtFR has been called the 2018 E3 Game of the show, Kotaku Game of the Year and recieved a 10/10 from IGN.
+
+This code could be reused to make your own game. In this repository there are template files and instructions on how to modify the game into something else. Generically, the game will output a scenario, give the player a selection of options to choose from, and then send the player to the next level. There are options to pick up items and block levels depending on what items you have. It's a simple program but can be a lot of fun. 
 
 ## To Begin
 To clone this repository:
