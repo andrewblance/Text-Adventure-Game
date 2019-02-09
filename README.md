@@ -5,9 +5,13 @@ This repository contains code for Robot the Friendly Robot, the revolutionary ne
 
 RtFR has been called the 2018 E3 Game of the show, Kotaku's Game of the Year and recieved a 10/10 from IGN.
 
+Though the game is great (lol), the code itself is not, so no judging.
+
 This code could be reused to make your own game. In this repository there are template files and instructions on how to modify the game into something else. Generically, the game will output a scenario, give the player a selection of options to choose from, and then send the player to the next level. There are options to pick up items and block levels depending on what items you have. It's a simple program but can be a lot of fun.
 
 Should work on mac and linux
+
+Seriously though, the code aint great.
 
 ## To Begin
 To clone this repository:
